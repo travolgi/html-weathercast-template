@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- favicons -->
+	<link rel="icon" href="./imgs/favicon.ico" />
+	<link rel="apple-touch-icon" href="./imgs/favicon-192.png" />
+	<meta name="author" content="Travolgi">
+	<!-- title page & SEO meta -->
+	<title>WeatherCast HTML website template with striking design</title>
+	<meta name="description" content="Create an eye-catching website with pre-configured pages for weather forecasts, events, news and enjoy high-performance and advanced functionality.">
+	<meta name="keywords" content="weather, weather template, forecast, forecast template, weather news, meteorology, weather patterns, climate, climate analysis, atmospheric conditions, temperature trends, weather data, forecasting tools, climate, weather monitoring, tabs design, animate, google fonts, SEO Friendly, google maps, contact form, html website template, minimal design, background images, tab functionality, high-performance, weather forecasts, events, news">
+	<!-- google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@400;700&family=Encode+Sans:wght@400;700&family=Marcellus&display=swap">
+	<!-- css -->
+	<link rel="stylesheet" href="./css/fontawesome.min.css" />
+	<link rel="stylesheet" href="./css/aos.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/custom.css">
+</head>
+<body class="home">
+	<!-- preload -->
+	<div id="preload">
+		<!-- your logo here -->
+		<img src="./imgs/logo.svg" class="logo" alt="WeatherCast logo">
+		<p>loading...</p>
+	</div>	
+	<!-- accessibility skip -->	
+	<a href="#main" class="skip-to-content">Skip to content</a>
+
+	<!-- header -->
+	<header class="flex">
+		<!-- your logo here -->
+		<img src="./imgs/logo.svg" class="logo" alt="WeatherCast logo">
+		
+		<!-- mobile navbar button -->
+		<button class="mobile-nav-toggle" aria-controls="header-nav" aria-expanded="false"><span class="sr-only">Menu</span></button>
+
+		<!-- navigation bar -->
+		<nav>
+			<ul id="header-nav" data-visible="false" class="flex header-nav underline-indicators">
+				<li class="active">
+					<a href="/" class="ff-sans-cond uppercase txt-white ls-2">
+						<span aria-hidden="true">01</span>Home
+					</a>
+				</li>
+				<li>
+					<a href="forecast.html" class="ff-sans-cond uppercase txt-white ls-2">
+						<span aria-hidden="true">02</span>Forecast
+					</a>
+				</li>
+				<li>
+					<a href="destination.html" class="ff-sans-cond uppercase txt-white ls-2">
+						<span aria-hidden="true">03</span>Destination
+					</a>
+				</li>
+				<li>
+					<a href="news.html" class="ff-sans-cond uppercase txt-white ls-2">
+						<span aria-hidden="true">04</span>News
+					</a>
+				</li>
+				</li>
+				<li>
+					<a href="contact.html" class="ff-sans-cond uppercase txt-white ls-2">
+						<span aria-hidden="true">05</span>Contact
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	
+	<!-- page content -->
+	<main class="grid-container grid-container--home" id="main">
+		<div>
+			<div class="flex" data-aos="zoom-in" data-aos-delay="300">
+				<!-- current weather icon -->
+				<img src="./imgs/sun.png" alt="Sun WeatherCast" />
+				<!-- current weather -->
+				<div>
+					<h3>Clear</h3>
+					<em>clear sky</em>
+				</div>
+			</div>
+			<h1 class="fs-700 ff-sans-cond txt-accent uppercase ls-1 mt-2" data-aos="zoom-in" data-aos-delay="200">
+				<!-- weather location -->
+				<i class="fa-solid fa-location-dot"></i> Venice, Italy
+				<!-- weather temperature -->
+				<span class="d-block fs-900 ff-serif txt-white">28 ° C</span>
+			</h1>
+			<!-- date -->
+			<p data-aos="zoom-in" data-aos-delay="450">April 10, 2023</p>
+
+			<!-- weather data table -->
+			<table class="mt-2" data-aos="zoom-in" data-aos-delay="550">
+				<tbody>
+					<tr>
+						<td class="fw-700">Humidity:</td>
+						<td>20% <i class="fa-solid fa-droplet"></i></td>
+					</tr>
+					<tr>
+						<td class="fw-700">Cloudiness:</td>
+						<td>5% <i class="fa-solid fa-cloud"></i></td>
+					</tr>
+					<tr>
+						<td class="fw-700">Wind speed:</td>
+						<td>1.89 m/s <i class="fa-solid fa-wind"></i></td>
+					</tr>
+					<tr>
+						<td class="fw-700">Rain:</td>
+						<td>0% <i class="fa-solid fa-cloud-rain"></i></td> 
+					</tr>
+					<tr>
+						<td class="fw-700">Snow:</td>
+						<td>0% <i class="fa-solid fa-snowflake"></i></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+		<!-- button link -->
+		<a href="forecast.html" class="btn-lg uppercase txt-dark bg-white ff-serif" data-aos="zoom-in" data-aos-delay="400">Forecast</a>
+	</main>
+
+	<!-- footer -->
+	<footer class="flex fadein">
+		<!-- copyright -->
+		<p>&copy; WeatherCast <span id="thisYear"></span>. All Rights Reserved. Developed by <a href="/">Travolgi</a>.</p>
+
+		<!-- social links -->
+		<ul class="flex social">
+			<li>
+				<a href="#" title="Facebook">
+					<!-- social icon -->
+					<i class="fa-brands fa-facebook-f"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#" title="Instagram">
+					<!-- social icon -->
+					<i class="fa-brands fa-instagram"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#" title="Twitter">
+					<!-- social icon -->
+					<i class="fa-brands fa-twitter"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#" title="Google Plus">
+					<!-- social icon -->
+					<i class="fa-brands fa-google-plus-g"></i>
+				</a>
+			</li>
+		</ul>
+	</footer>
+
+	<!-- js -->
+	<script src="./js/aos.js"></script>
+	<script src="./js/main.js" defer></script>
+</body>
+</html>

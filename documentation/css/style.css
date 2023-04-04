@@ -1,0 +1,215 @@
+/*
+*	Author: Travolgi
+*	Theme: TemplateName
+*	Version: 1.0.0
+*	Created: 00/00/2023
+*	Last update: 00/00/2023
+*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+:root {
+	--more-dark: #202124;
+	--dark: #303134;
+	--white: rgba(255,255,255, .9);
+	--primary: #00beb7;
+	--gradient: linear-gradient(80deg,#ba0035 18%,#5b5b84 70%,#00beb7 105%);
+	--ff: "Poppins", sans-serif;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	display: grid;
+	grid-template-columns: 16rem 1fr;
+	font-family: var(--ff);
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.6;
+	color: var(--white);
+	background-color: var(--dark);
+	scroll-behavior: smooth;
+}
+header,
+footer {
+	padding: 2rem;
+}
+header {
+	position: relative;
+	display: block;
+	grid-row: span 2;
+	padding-block: 4rem;
+	background-color: var(--more-dark);
+}
+header img {
+	width: 12rem;
+	margin-bottom: 2rem;
+}
+header a {
+	color: var(--white);
+}
+footer {
+	text-align: center;
+}
+section {
+	position: relative;
+	padding: 4rem 2rem ;
+}
+section::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	display: block;
+	height: .5rem;
+	background-image: var(--gradient);
+}
+header small {
+	display: block;
+	margin-bottom: 1rem;
+}
+h1, h2, h3 {
+	line-height: 1;
+	margin-bottom: 2rem;
+	font-weight: 800;
+}
+h1 {
+	font-size: calc(1.2rem * 2.618);
+}
+h2 {
+	font-size: calc(1.2rem * 1.618);
+}
+h3 {
+	font-size: 1.6rem;
+	font-weight: 500;
+	margin-bottom: .8rem;
+}
+a {
+	color: var(--primary);
+	font-weight: 600;
+	text-decoration: none;
+	transition: all 1s ease-in;
+}
+a:hover {
+	text-decoration: underline;
+}
+main ul {
+	margin-bottom: 1.5rem;
+	margin-left: .5rem;
+}
+main ul li:before {
+	content: '\2022';
+	margin-inline: .5rem;
+	color: var(--primary);
+}
+.txt-gradient {
+	-webkit-text-fill-color: transparent;
+	background: var(--gradient);
+	-webkit-background-clip: text;
+	display: inline-block;
+}
+img {
+	width: 100%;
+	border-radius: .6rem;
+}
+button#goTop {
+	display: none;
+	position: fixed;
+	right: 1.8rem;
+	bottom: 7rem;
+	background: var(--more-dark);
+	padding: .4rem .6rem;
+	border-radius: 1.8rem;
+	transition: background-color .8s, color .5s;
+	cursor: pointer;
+	z-index: 99;
+	animation: fade ease 4s;
+}
+button#goTop svg, a.btn#goTop svg {
+	width: 1.2rem;
+	color: var(--white);
+}
+@keyframes fade {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.mb-2 {
+	margin-bottom: 2rem;
+}
+.mbk {
+	margin-block: 1rem;
+}
+.notice {
+	display: inline-block;
+	padding: 1rem 1.5rem;
+	margin-bottom: .5rem;
+	border-radius: .8rem;
+	background: var(--more-dark);
+}
+.screen {
+	max-width: 50rem;
+	display: block;
+	margin-block: 1rem;
+}
+pre {
+	background-color: var(--more-dark);
+	border-radius: .8rem;
+	padding: 1rem 2rem;
+}
+.md-fixed {
+	position: fixed;
+}
+.upper {
+	text-transform: uppercase;
+}
+.logo {
+	width: 12rem;
+}
+.related {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 2rem;
+}
+.related h2 {
+	margin-block: 1rem .5rem;
+}
+.related a {
+	font-weight: 400;
+	color: var(--white);
+}
+
+@media (max-width: 65em) {
+	body {
+		grid-template-columns: 1fr;
+	}
+	section {
+		padding-inline: 1rem;
+	}
+	h1 {
+		font-size: 2rem;
+	}
+	pre {
+		font-size: 1rem;
+		white-space: pre-wrap;
+		word-wrap: break-word;
+	}
+	.md-fixed {
+		position: relative;
+	}
+	button.gotop {
+		right: 1rem;
+		bottom: 1rem;
+	}
+	.related {
+		grid-template-columns: 1fr;
+	}
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- favicons -->
+	<link rel="icon" href="./imgs/favicon.ico" />
+	<link rel="apple-touch-icon" href="./imgs/favicon-192.png" />
+	<meta name="author" content="Travolgi">
+	<!-- title page & SEO meta -->
+	<title>News - WeatherCast HTML website template with striking design</title>
+	<meta name="description" content="Create an eye-catching website with pre-configured pages for weather forecasts, events, news and enjoy high-performance and advanced functionality.">
+	<meta name="keywords" content="weather, weather template, forecast, forecast template, weather news, meteorology, weather patterns, climate, climate analysis, atmospheric conditions, temperature trends, weather data, forecasting tools, climate, weather monitoring, tabs design, animate, google fonts, SEO Friendly, google maps, contact form, html website template, minimal design, background images, tab functionality, high-performance, weather forecasts, events, news">
+	<!-- google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@400;700&family=Encode+Sans:wght@400;700&family=Marcellus&display=swap">
+	<!-- css -->
+	<link rel="stylesheet" href="./css/fontawesome.min.css" />
+	<link rel="stylesheet" href="./css/aos.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/custom.css">
+</head>
+<body class="news">
+	<!-- preload -->
+	<div id="preload">
+		<!-- your logo here -->
+		<img src="./imgs/logo.svg" class="logo" alt="WeatherCast logo">
+		<p>loading...</p>
+	</div>
+	<!-- accessibility skip -->	
+	<a href="#main" class="skip-to-content">Skip to content</a>
+
+	<!-- header -->
+	<header class="flex">
+		<!-- your logo here -->
+		<img src="./imgs/logo.svg" class="logo" alt="WeatherCast logo">
+		
+		<!-- mobile navbar button -->
+		<button class="mobile-nav-toggle" aria-controls="header-nav" aria-expanded="false"><span class="sr-only">Menu</span></button>
+
+		<!-- navigation bar -->
+		<nav>
+			<ul id="header-nav" data-visible="false" class="flex header-nav underline-indicators">
+				<li>
+					<a href="/" class="ff-sans-cond uppercase txt-white ls-2">
+						<span aria-hidden="true">01</span>Home
+					</a>
+				</li>
+				<li>
+					<a href="forecast.html" class="ff-sans-cond uppercase txt-white ls-2">
+						<span aria-hidden="true">02</span>Forecast
+					</a>
+				</li>
+				<li>
+					<a href="destination.html" class="ff-sans-cond uppercase txt-white ls-2">
+						<span aria-hidden="true">03</span>Destination
+					</a>
+				</li>
+				<li class="active">
+					<a href="news.html" class="ff-sans-cond uppercase txt-white ls-2">
+						<span aria-hidden="true">04</span>News
+					</a>
+				</li>
+				</li>
+				<li>
+					<a href="contact.html" class="ff-sans-cond uppercase txt-white ls-2">
+						<span aria-hidden="true">05</span>Contact
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	
+	<!-- page content -->
+	<main class="grid-container grid-container--news flow" id="main">
+		<h1 class="numb-title" data-aos="zoom-in" data-aos-delay="200"><span aria-hidden="true">04</span> News</h1>
+
+		<!-- tabs controls -->
+		<div class="flex dot-indicators" role="tablist" aria-label="news" data-aos="zoom-in" data-aos-delay="600">
+			<button aria-selected="true" role="tab" tabindex="0" aria-controls="winter" data-image="winter-img"><span class="sr-only">Winter 2023 - Climate Update</span></button>
+			<button aria-selected="false" role="tab" tabindex="-1" aria-controls="spring" data-image="spring-img"><span class="sr-only">Spring 2023 - Climate Update</span></button>
+			<button aria-selected="false" role="tab" tabindex="-1" aria-controls="summer" data-image="summer-img"><span class="sr-only">Summer 2023 - Climate Update</span></button>
+			<button aria-selected="false" role="tab" tabindex="-1" aria-controls="autumn" data-image="autumn-img"><span class="sr-only">Autumn</span></button>
+			<button aria-selected="false" role="tab" tabindex="-1" aria-controls="city" data-image="city-img"><span class="sr-only">City climate</span></button>
+		</div>
+
+		<!-- news content -->
+		<article class="news-details flow" id="winter" tabindex="0" role="tabpanel" data-aos="zoom-in" data-aos-delay="300">
+			<header class="flow flow--space-small">
+				<h2 class="fs-600 ff-serif uppercase">September 15, 2023</h2>
+				<p class="fs-700 ff-serif uppercase">Winter 2023 Climate Update</p>
+			</header>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, et deserunt at asperiores mollitia, quam atque non ab libero sapiente error facilis enim nihil modi iure. Voluptate nobis error beatae.</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, et deserunt at asperiores mollitia, quam atque non ab libero sapiente error facilis enim nihil modi iure. Voluptate nobis error beatae.</p>
+		</article>
+		<!-- news content -->
+		<article class="news-details flow" id="spring" tabindex="0" role="tabpanel" hidden>
+			<header class="flow flow--space-small">
+				<h2 class="fs-600 ff-serif uppercase">January 07, 2023</h2>
+				<p class="fs-700 ff-serif uppercase">Spring 2023 - Climate Update</p>
+			</header>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, et deserunt at asperiores mollitia, quam atque non ab libero sapiente error facilis enim nihil modi iure. Voluptate nobis error beatae.</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, et deserunt at asperiores mollitia, quam atque non ab libero sapiente error facilis enim nihil modi iure. Voluptate nobis error beatae.</p>
+		</article>
+		<!-- news content -->
+		<article class="news-details flow" id="summer" tabindex="0" role="tabpanel" hidden>
+			<header class="flow flow--space-small">
+				<h2 class="fs-600 ff-serif uppercase">April 10, 2023</h2>
+				<p class="fs-700 ff-serif uppercase">Summer 2023 - Climate Update</p>
+			</header>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, et deserunt at asperiores mollitia, quam atque non ab libero sapiente error facilis enim nihil modi iure. Voluptate nobis error beatae.</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, et deserunt at asperiores mollitia, quam atque non ab libero sapiente error facilis enim nihil modi iure. Voluptate nobis error beatae.</p>
+		</article>
+		<!-- news content -->
+		<article class="news-details flow" id="autumn" tabindex="0" role="tabpanel" hidden>
+			<header class="flow flow--space-small">
+				<h2 class="fs-600 ff-serif uppercase">July 23, 2023</h2>
+				<p class="fs-700 ff-serif uppercase">Autumn 2023 - Climate Update</p>
+			</header>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, et deserunt at asperiores mollitia, quam atque non ab libero sapiente error facilis enim nihil modi iure. Voluptate nobis error beatae.</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, et deserunt at asperiores mollitia, quam atque non ab libero sapiente error facilis enim nihil modi iure. Voluptate nobis error beatae.</p>
+		</article>
+		<!-- news content -->
+		<article class="news-details flow" id="city" tabindex="0" role="tabpanel" hidden>
+			<header class="flow flow--space-small">
+				<h2 class="fs-600 ff-serif uppercase">September 27, 2023</h2>
+				<p class="fs-700 ff-serif uppercase">City climate</p>
+			</header>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, et deserunt at asperiores mollitia, quam atque non ab libero sapiente error facilis enim nihil modi iure. Voluptate nobis error beatae.</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, et deserunt at asperiores mollitia, quam atque non ab libero sapiente error facilis enim nihil modi iure. Voluptate nobis error beatae.</p>
+		</article>
+
+		<!-- news image -->
+		<picture id="winter-img" tabindex="0" data-aos="zoom-in" data-aos-delay="400">
+			<img src="./imgs/news/winter.webp" alt="WeatherCast news">
+		</picture>
+		<!-- news image -->
+		<picture id="spring-img" tabindex="0" hidden>
+			<img src="./imgs/news/spring.webp" alt="WeatherCast news">
+		</picture>
+		<!-- news image -->
+		<picture id="summer-img" tabindex="0" hidden>
+			<img src="./imgs/news/summer.webp" alt="WeatherCast news">
+		</picture>
+		<!-- news image -->
+		<picture id="autumn-img" tabindex="0" hidden>
+			<img src="./imgs/news/autumn.webp" alt="WeatherCast news">
+		</picture>
+		<!-- news image -->
+		<picture id="city-img" tabindex="0" hidden>
+			<img src="./imgs/news/city.webp" alt="WeatherCast news">
+		</picture>
+	</main>
+
+	<!-- footer -->
+	<footer class="flex fadein">
+		<!-- copyright -->
+		<p>&copy; WeatherCast <span id="thisYear"></span>. All Rights Reserved. Developed by <a href="/">Travolgi</a>.</p>
+
+		<!-- social links -->
+		<ul class="flex social">
+			<li>
+				<a href="#" title="Facebook">
+					<!-- social icon -->
+					<i class="fa-brands fa-facebook-f"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#" title="Instagram">
+					<!-- social icon -->
+					<i class="fa-brands fa-instagram"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#" title="Twitter">
+					<!-- social icon -->
+					<i class="fa-brands fa-twitter"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#" title="Google Plus">
+					<!-- social icon -->
+					<i class="fa-brands fa-google-plus-g"></i>
+				</a>
+			</li>
+		</ul>
+	</footer>
+
+	<!-- js -->
+	<script src="./js/aos.js"></script>
+	<script src="./js/main.js" defer></script>
+</body>
+</html>
