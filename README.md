@@ -7,7 +7,7 @@ WeatherCast is designed to make your website a visually exciting and engaging ex
 - Name: WeatherCast
 - Version: 1.0.0
 - Created: 05/04/2023
-- Author: [Travolgi](https://travolgi.com)
+- Author: [Travolgi](https://themes.travolgi.com)
 - Email: travolgi@gmail.com
 
 ## Thanks
