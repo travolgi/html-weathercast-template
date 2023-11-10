@@ -10,6 +10,7 @@ WeatherCast is designed to make your website a visually exciting and engaging ex
 - Author: [Travolgi](https://themes.travolgi.com)
 - Email: travolgi@gmail.com
 
-## Thanks
+## License
+This website template is FREE and you can use it to create your own site leaving the copyright "Developed by Travolgi"
 
-Thank you for purchasing our template.
+You can purchase our other models at [TemplateMonster](https://www.templatemonster.com/authors/travolgi?utm_campaign=homepage_travolgi&utm_source=website_travolgi&utm_medium=referral&aff=travolgi) <img alt="TemplateMonster" title="TemplateMonster" src="https://www.templatemonster.com/safari-pinned-tab.svg" width="45" />
